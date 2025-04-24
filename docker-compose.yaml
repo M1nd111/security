@@ -1,0 +1,18 @@
+version: '3.9'
+
+services:
+
+  database:
+    image: 'postgres:14-alpine'
+    container_name: 'postgres-db'
+    environment:
+      - POSTGRES_USER=acc
+      - POSTGRES_PASSWORD=acc
+      - POSTGRES_DB=acc
+    # Скрипт для инициализации, скорее всего для demo стенда
+    #    volumes:
+    #      - type: bind
+    #        source: ./init.sql
+    #        target: /docker-entrypoint-initdb.d/init.sql
+    ports:
+      - 5432:5432
