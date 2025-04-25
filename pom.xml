@@ -93,11 +93,6 @@
             <id>github</id>
             <url>https://maven.pkg.github.com/M1nd111/security</url>
         </repository>
-        <snapshotRepository>
-            <id>github</id>
-            <!--suppress UnresolvedMavenProperty -->
-            <url>https://maven.pkg.github.com/M1nd111/security</url>
-        </snapshotRepository>
     </distributionManagement>
 
 </project>
