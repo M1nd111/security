@@ -11,7 +11,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>plugin</groupId>
+    <groupId>com.github.M1nd111</groupId>
     <artifactId>acc-auth</artifactId>
     <version>0.1.0-SNAPSHOT</version>
 
@@ -90,14 +90,13 @@
 
     <distributionManagement>
         <repository>
-            <id>gitlab-maven</id>
-            <!--suppress UnresolvedMavenProperty -->
-            <url>${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven</url>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/M1nd111/security</url>
         </repository>
         <snapshotRepository>
-            <id>gitlab-maven</id>
+            <id>github</id>
             <!--suppress UnresolvedMavenProperty -->
-            <url>${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven</url>
+            <url>https://maven.pkg.github.com/M1nd111/security</url>
         </snapshotRepository>
     </distributionManagement>
 
